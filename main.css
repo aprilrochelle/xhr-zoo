@@ -1,5 +1,51 @@
 body {
-    background-color: white;
+    background-color: rgb(77, 77, 77);
     color: gold;
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+#animal-holder {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animal-card {
+    background-color: black;
+    color: white;
+    width: 25%;
+    margin: 1.5%;
+    text-align: center;
+    border: 3px solid lightgrey;
+}
+
+.animal-card img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.animal-card h1 {
+    color: gold;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
+}
+
+.animal-card button {
+    margin: 7px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.animal-card button:hover {
+    background-color: gold;
+    color: black;
 }
