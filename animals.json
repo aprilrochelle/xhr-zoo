@@ -1,0 +1,109 @@
+{
+    "animals": [
+        {
+            "name": "Blue Poison Arrow Frog",
+            "type": "Amphibian",
+            "number": 10,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_frogs.jpg"
+        },
+        {
+            "name": "Panamanian Golden Frog",
+            "type": "Amphibian",
+            "number": 4,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_golden-frog-katie-gregory.jpg"
+        },
+        {
+            "name": "Puerto Rican Crested Toad",
+            "type": "Amphibian",
+            "number": 3,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_prct.jpg"
+        },
+        {
+            "name": "Hyacinth Macaw",
+            "type": "Bird",
+            "number": 4,
+            "isCarnivore": false,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_hyacinthmacaw3-sq.jpg"
+        },
+        {
+            "name": "Rhinoceros Hornbill",
+            "type": "Bird",
+            "number": 2,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_rhinohornbill1.jpg"
+        },
+        {
+            "name": "Ostrich",
+            "type": "Bird",
+            "number": 5,
+            "isCarnivore": false,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_ostrich1.jpg"
+        },
+        {
+            "name": "Blue Tang Surgeon Fish",
+            "type": "Fish",
+            "number": 25,
+            "isCarnivore": false,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_blue-tang-surgeonfish.jpg"
+        },
+        {
+            "name": "Lined Seahorse",
+            "type": "Fish",
+            "number": 19,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_lined-seahorse.jpg"
+        },
+        {
+            "name": "White-Blotched River Stingray",
+            "type": "Fish",
+            "number": 8,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_white-blotched-stingray.jpg"
+        },
+        {
+            "name": "Red Ruffed Lemur",
+            "type": "Mammal",
+            "number": 10,
+            "isCarnivore": false,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_redruffedlemur4.jpg"
+        },
+        {
+            "name": "Clouded Leopard",
+            "type": "Mammal",
+            "number": 4,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_cloudedleopard7.jpg"
+        },
+        {
+            "name": "Yellow-Backed Duiker",
+            "type": "Mammal",
+            "number": 5,
+            "isCarnivore": false,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_yellow-backed_duiker_-_bartoo.jpg"
+        },
+        {
+            "name": "Caiman Lizard",
+            "type": "Reptile",
+            "number": 3,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_caiman-lizard-web.jpg"
+        },
+        {
+            "name": "Eyelash Palm Pit Viper",
+            "type": "Reptile",
+            "number": 2,
+            "isCarnivore": true,
+            "imageURL": "https://www.speakcdn.com/assets/2147/12_eyelashviper-web.jpg"
+        },
+        {
+            "name": "Galapagos Tortoise",
+            "type": "Reptile",
+            "number": 5,
+            "isCarnivore": false,
+            "imageURL": "https://www.speakcdn.com/assets/2147/tortoise6.jpg"
+        }
+    ]
+}
