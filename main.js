@@ -5,21 +5,55 @@ const printToDom = (domString, divId) => {
 const buildDomString = (animalArray) => {
     let domString = '';
     animalArray.forEach((animal) => {
-        domString += `<div class="animal-card">`;
+        if (animal.isCarnivore) {
+            domString += `<div class="animal carnivore">`;
+        } else {
+            domString += `<div class="animal vegetable">`;
+        }
         domString +=    `<h1>${animal.name}</h1>`;
         domString +=    `<h3>${animal.number}</h3>`;
         domString +=    `<img class="animal-image" src="${animal.imageURL}">`;
         domString +=    `<div class="button-container">`;
-        domString +=        `<button>Escaped</button>`;
+        domString +=        `<button class="escaped">Escaped</button>`;
         domString +=    `</div>`;
         domString += `</div>`;
     });
     printToDom(domString,"animal-holder");
 }
 
+const addEscapedEventListeners = () => {
+    const escapeBtns = document.getElementsByClassName('escaped');
+    for (let i = 0; i < escapeBtns.length; i++) {
+        escapeBtns[i].addEventListener('click', animalEscaped);
+    }
+}
+
+const animalEscaped = () => {
+
+    showCarnivores();
+    showVegetables();
+}
+
+const showCarnivores = () => {
+    const carnivores = document.getElementsByClassName('carnivore');
+    for (let j = 0; j < carnivores.length; j++) {
+        carnivores[j].children[3].innerHTML = '';
+        carnivores[j].classList.add('red');
+    }
+}
+
+const showVegetables = () => {
+    const veggies = document.getElementsByClassName('vegetable');
+    for (let k = 0; k < veggies.length; k++) {
+        veggies[k].children[3].innerHTML = `<button>EAT ME!!!</button>`;
+        veggies[k].classList.add('green');
+    }
+}
+
 function executeOnLoad() {
     const data = JSON.parse(this.responseText);
     buildDomString(data.animals);
+    addEscapedEventListeners();
 }
 
 function executeIfFail() {
