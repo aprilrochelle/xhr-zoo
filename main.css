@@ -37,6 +37,8 @@ h1 {
     color: gold;
     font-family: 'PT Sans', sans-serif;
     font-size: 2em;
+    margin: 10px;
+    width: 90%;
 }
 
 .animal button {

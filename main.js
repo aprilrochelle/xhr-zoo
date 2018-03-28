@@ -14,16 +14,38 @@ const buildDomString = (animalArray) => {
         domString +=    `<h3>${animal.number}</h3>`;
         domString +=    `<img class="animal-image" src="${animal.imageURL}">`;
         domString +=    `<div class="button-container">`;
-        domString +=        `<button>Escaped</button>`;
+        domString +=        `<button class="escaped">Escaped</button>`;
         domString +=    `</div>`;
         domString += `</div>`;
     });
     printToDom(domString,"animal-holder");
 }
 
+const addEscapedEventListeners = () => {
+    const escapeBtns = document.getElementsByClassName('escaped');
+    for (let i = 0; i < escapeBtns.length; i++) {
+        escapeBtns[i].addEventListener('click', animalEscaped);
+    }
+}
+
+const animalEscaped = () => {
+
+    showCarnivores();
+    showVegetables();
+}
+
+const showCarnivores = () => {
+    
+}
+
+const showVegetables = () => {
+
+}
+
 function executeOnLoad() {
     const data = JSON.parse(this.responseText);
     buildDomString(data.animals);
+    addEscapedEventListeners();
 }
 
 function executeIfFail() {
