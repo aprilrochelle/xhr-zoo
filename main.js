@@ -35,11 +35,19 @@ const animalEscaped = () => {
 }
 
 const showCarnivores = () => {
-    
+    const carnivores = document.getElementsByClassName('carnivore');
+    for (let j = 0; j < carnivores.length; j++) {
+        carnivores[j].children[3].innerHTML = '';
+        carnivores[j].classList.add('red');
+    }
 }
 
 const showVegetables = () => {
-
+    const veggies = document.getElementsByClassName('vegetable');
+    for (let k = 0; k < veggies.length; k++) {
+        veggies[k].children[3].innerHTML = '';
+        veggies[k].classList.add('green');
+    }
 }
 
 function executeOnLoad() {
