@@ -28,10 +28,29 @@ const addEscapedEventListeners = () => {
     }
 }
 
-const animalEscaped = () => {
-
+const animalEscaped = (e) => {
+    const badAnimalBtnContainer = e.target.parentNode;
     showCarnivores();
     showVegetables();
+    showFoundButton(badAnimalBtnContainer);
+}
+
+const showFoundButton = (buttonContainer) => {
+    buttonContainer.innerHTML = `<button id="found">Found</button>`;
+    initializeFoundButton();
+}
+
+const initializeFoundButton = () => {
+    const foundButton = document.getElementById('found');
+    foundButton.addEventListener('click', () => {
+        const animals = document.getElementsByClassName('animal');
+        for (let m = 0; m < animals.length; m++) {
+            animals[m].children[3].innerHTML = `<button class="escaped">Escape</button>`;
+            animals[m].classList.remove('green');
+            animals[m].classList.remove('red');
+        }
+        addEscapedEventListeners();
+    })
 }
 
 const showCarnivores = () => {
