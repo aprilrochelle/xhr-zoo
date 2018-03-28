@@ -61,12 +61,27 @@ const showCarnivores = () => {
     }
 }
 
+const initializeEatmeButtons = () => {
+    const eatMeButtons = document.getElementsByClassName('eat-me');
+    for (let n = 0; n < eatMeButtons.length; n++) {
+        eatMeButtons[n].addEventListener('click', itsAlreadyBeenEaten);
+    }
+}
+
+const itsAlreadyBeenEaten = (e) => {
+    const currentNum = e.target.parentNode.parentNode.children[1].innerHTML;
+    const numLeft = currentNum*1 - 1;
+    e.target.parentNode.parentNode.children[1].innerHTML = numLeft;
+}
+
+
 const showVegetables = () => {
     const veggies = document.getElementsByClassName('vegetable');
     for (let k = 0; k < veggies.length; k++) {
-        veggies[k].children[3].innerHTML = `<button>EAT ME!!!</button>`;
+        veggies[k].children[3].innerHTML = `<button class="eat-me">EAT ME!!!</button>`;
         veggies[k].classList.add('green');
     }
+    initializeEatmeButtons();
 }
 
 function executeOnLoad() {
